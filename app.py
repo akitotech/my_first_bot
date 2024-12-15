@@ -18,7 +18,7 @@ handler = WebhookHandler(os.environ["CHANNEL_SECRET"])
 def index():
     return "you call index"
 
-
+@app.route("/callback", methods=["POST"])
 def callback():
     """Messaging APIからの呼び出し関数"""
     # LINEがリクエストの改ざんを防ぐために付与する署名を取得
