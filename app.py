@@ -2,7 +2,7 @@ import os
 from flask import Flask, request, abort
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
-from linebot.models import MessageEvent, TextMessage, TextSendMessag
+from linebot.models import MessageEvent, TextMessage, TextSendMessage
 from dotenv import load_dotenv
 
 load_dotenv(override=True)
